@@ -1,0 +1,111 @@
+
+body{
+	width: 100%;
+	height: 100%;
+}
+.cover{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background:  url("http://i.shangc.net/2018/0626/20180626110408176.jpg") no-repeat center ;
+	background-size: cover;
+	/*滤镜，值越大越模糊*/
+	filter: blur(5px);
+}
+.musicbox{
+	width: 20%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-100%);
+	background-color: 	#FFF5EE;
+	border-radius: 2px;
+	box-shadow: 0 1px 15px 3px rgba(0,0,0,0.3);
+	padding: 10px 20px;
+}
+.introduce{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	
+}
+.contro{
+	position: absolute;
+	top: 20px;
+}
+.contro .icon-before,
+.contro .icon-stop,
+.contro .icon-play,
+.contro .icon-next{
+	padding: 3px;
+	font-size: 20px;
+	color: #696969;
+}
+.contro .icon-bofore:hover,
+.contro .icon-stop:hover,
+.contro .icon-play:hover,
+.contro .icon-next:hover{
+	color: #FF6347;
+}
+
+.info{
+	position: absolute;
+	left: 50%;
+	top: 5px;
+	text-align: center;
+	padding: 0 5px;
+	width: 50%;
+}
+.musicbox .info a{
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #FF6347;
+	width: 100%;
+}
+.info .author{
+	font-size: 13px;
+}
+.bar{
+	position: absolute;
+	width: 100%;
+	top: 55px;
+	padding: 3px;
+}
+.bar .probar,
+.bar .newbar{
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #ccc;
+	border-radius: 2px;
+}
+.bar .newbar{
+	width: 0;
+	background-color:#FF6347; 
+}
+.bar .time{
+	padding-top: 5px;
+	margin-left: 80%;
+	font-size: 14px;
+	color: #696969;
+}
+.musiclist li{
+	font-size: 15px;
+	padding: 2px 2px;
+	margin: 2px;
+	background-color: rgba(255,99,71,0.5); 
+	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: all 0.5s;
+}
+.musiclist li:hover{
+	background-color: rgba(255,99,71,0.7);
+}
+.musiclist .active{
+	background-color: rgba(255,99,71,0.7);
+	padding-left: -5px; 
+}
