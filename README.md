@@ -1,4 +1,5 @@
 # musicPlayer
+# 预览链接：https://xcc99.github.io/musicPlayer/musicPlayer/index.html
 # HTML+CSS+JS实现音乐播放器
 ## 主要技术
 ### - mock数据使用的easymock
